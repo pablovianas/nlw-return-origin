@@ -4,10 +4,23 @@ function onScroll(){
 
 function openMenu() {
     document.body.classList.add('menu-expanded')
-    document.getElementById('doctorcare-logo').src = './src/assets/logo-white.png'
 }
 
 function closeMenu() {
     document.body.classList.remove('menu-expanded')
-    document.getElementById('doctorcare-logo').src = './src/assets/logo.png'
 }
+
+ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+}).reveal(`
+    #home , 
+    #home img, 
+    #home .stats, 
+    #services,
+    #services header,
+    #services .card,
+    #about, 
+    #about header,
+    #about .content`);
