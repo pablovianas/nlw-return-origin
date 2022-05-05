@@ -1,5 +1,12 @@
+window.addEventListener('scroll', onScroll)
+
 function onScroll(){
+    showBackToTopButtonOnScroll()
     return scrollY > 0 ? navigation.classList.add('scroll') : navigation.classList.remove('scroll')
+}
+
+function showBackToTopButtonOnScroll(){
+    return scrollY > 500 ? backToTopButton.classList.add('show') : backToTopButton.classList.remove('show')
 }
 
 function openMenu() {
@@ -23,4 +30,12 @@ ScrollReveal({
     #services .card,
     #about, 
     #about header,
-    #about .content`);
+    #about .content,
+    #contact, 
+    #contact header,
+    #contact .content,
+    footer,
+    footer .logo,
+    footer p,
+    footer .social-links`);
+
