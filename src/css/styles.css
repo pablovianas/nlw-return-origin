@@ -458,7 +458,7 @@ footer .social-links{
     font-size: 4rem;
     line-height: 5.2rem;
   }
-  
+
   /*=== reset =================================*/
 
   nav#navigation .wrapper *{
@@ -667,7 +667,7 @@ footer .social-links{
   }
 
   #about .col-b img{
-    width: 50rem;
+    width: 48rem;
   }
 
 /*=== CONTACT =================================*/
@@ -678,6 +678,10 @@ footer .social-links{
   }
   #contact h2{
     width: 40.4rem;
+  }
+
+  #contact img{
+    width: 57.5rem;
   }
 
 /*=== FOOTER =================================*/
